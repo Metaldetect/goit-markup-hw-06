@@ -30,7 +30,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
   background-color: var(--bgc-white-color);
   color: var(--paragraph-text-color);
   letter-spacing: 0.02em;
@@ -287,7 +286,7 @@ a {
   background-color: var(--studio-white-color);
 }
 .priorities-list .item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 24px;
 }
 
 .priorities h3 {
@@ -296,6 +295,10 @@ a {
   color: var(--title-text-color);
 
   margin-bottom: 8px;
+}
+.priorities p {
+  font-size: 16px;
+  line-height: 150%; /* 24/16 */
 }
 
 /* =================WORK TITLE================== */
@@ -346,6 +349,10 @@ a {
   color: var(--title-text-color);
 
   margin-bottom: 8px;
+}
+.team-section p {
+  font-size: 16px;
+  line-height: 150%; /* 24/16 */
 }
 .team-list {
   display: flex;
@@ -538,7 +545,7 @@ a {
 .subscribe-input {
   width: 264px;
   height: 40px;
- 
+
   padding-left: 16px;
   color: #fff;
   background-color: var(--title-text-color);
@@ -656,6 +663,7 @@ a {
 }
 .portfolio-title p {
   color: var(--paragraph-text-color);
+  line-height: 150%; /* 24/16 */
 }
 .portfolio-box:nth-child(-n + 6) {
   margin-bottom: 48px;
@@ -788,8 +796,9 @@ a {
 .modal-title {
   display: flex;
   justify-content: center;
-  margin-bottom: 14px;
   font-weight: 500;
+  line-height: 150%; /* 24/16 */
+  margin-bottom: 16px;
   color: var(--title-text-color);
 }
 .form {
@@ -800,7 +809,7 @@ a {
 }
 .modal-icon {
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 16px;
   width: 18px;
   height: 24px;
@@ -808,8 +817,9 @@ a {
   fill: #2e2f42;
 }
 .modal-label {
+  display: block;
   font-size: 12px;
-  line-height: 133.333333%; /* 16/12 */
+  line-height: 1;
   color: #8e8f99;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
@@ -817,7 +827,7 @@ a {
 .modal-input {
   padding-left: 38px;
   width: 100%;
-  height: 32px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -827,14 +837,13 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
-  position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .modal-comment {
   width: 100%;
   height: 120px;
-  padding: 8px 0px 0px 16px;
+  padding: 8px 8px 0px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -848,22 +857,24 @@ a {
   margin-bottom: 16px;
 }
 .modal-form-check {
+  display: flex;
+  align-items: center;
   font-size: 12px;
-  line-height: 133.333333%; /* 16/12 */
-  margin-left: 24px;
+  line-height: 1;
   color: #757575;
   letter-spacing: 0.04em;
 }
 .modal-policy {
+  margin-left: 4px;
   text-decoration: underline;
+  color: var(--botton-text-color);
 }
 .modal-form-check::before {
   content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
+  display: block;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
   cursor: pointer;
@@ -881,7 +892,8 @@ a {
 .modal-btn-submit {
   width: 169px;
   height: 56px;
-  margin: 0 96px;
+  margin: 0 auto;
+  display: block;
 
   color: var(--bgc-white-color);
   background-color: var(--botton-text-color);
